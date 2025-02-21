@@ -1,0 +1,113 @@
+/* === Styles Généraux === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* === Conteneur Principal === */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* === Carte Blanche === */
+.card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === Logo === */
+#logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #4facfe;
+}
+
+/* === Titre === */
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* === Texte Description === */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* === Formulaire === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    width: calc(100% - 20px);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* === Bouton Jouer === */
+#playButton {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+    display: inline-block;
+}
+
+#playButton:hover {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* === Résultat === */
+#result {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4facfe;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}

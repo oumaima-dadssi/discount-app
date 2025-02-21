@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Réduction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="images/logo.png" alt="Logo" id="logo">
+            <h1>Gagnez votre réduction</h1>
+            <p>Tentez votre chance et bénéficiez d'une réduction pour la prochaine session de formation.</p>
+
+            <form id="userForm">
+                <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                <button type="submit" id="playButton">🎉 Jouer maintenant</button>
+            </form>
+
+            <div id="result" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
