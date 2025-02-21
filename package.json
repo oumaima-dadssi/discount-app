@@ -12,12 +12,18 @@
   ],
   "author": "oumaima",
   "license": "ISC",
-  "description": "",
+  "description": "QR Discount App for MongoDB and Heroku deployment",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "instascan": "^1.0.0",
     "mongoose": "^8.10.1",
     "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
